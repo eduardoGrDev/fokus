@@ -1,4 +1,5 @@
 body {
+    background-image: url("img/Background-linhas.png");
     background: linear-gradient(180deg, #1875E9 0%, #041832 48.44%, #01080E 100%);
     width: auto;
     height: 853px;
@@ -8,3 +9,4 @@ body {
     gap: 0px;
     opacity: 0px;
 }
+
