@@ -1,5 +1,4 @@
 body {
-    background-image: url("img/Background-linhas.png");
     background: linear-gradient(180deg, #1875E9 0%, #041832 48.44%, #01080E 100%);
     width: auto;
     height: 853px;
@@ -9,4 +8,66 @@ body {
     gap: 0px;
     opacity: 0px;
 }
+button {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: center;
+}
+.imagen-fondo{
+background-size: cover;
+opacity: 0.30;
+
+}
+.container-body{
+    height: 542px;
+    width: 1440px;
+}
+.contenedor-logo{
+    text-align: center;
+}
+.logo{
+    height: 40px;
+    width: 156.36px;
+}
+.contenedor-main{
+    display:flex;
+    width: 1097px;
+    height: 402px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.contenedor-parrafo{
+    height: 402px;
+    width: 490px;
+    color: white;
+    flex:1;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 53.7px;
+    font-weight: 200;
+    line-height: 80.55px;
+    text-align: left;
+    padding: 30px;
+}
+#bold{
+    flex:1;
+    font-family: Unbounded;
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 79.5px;
+    text-align: left;
+}
+.contenedor-timer{
+    width: 500px;
+    height: 350px;
+    text-align: center;
+    padding: 30px;
+}
+
 

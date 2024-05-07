@@ -1,50 +1,41 @@
- <!-- <!DOCTYPE html>
-<html lang="es-mx">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Fokus</title>
-</head>
-<body>
-    <div class="container__imagenes">
-        <img src="./img/Logo.png" alt="logo-fokus" class="container__imagen-logo">
-       <img src="./img/Background-linhas.png" alt="fondo-fokus" class="container__imagen-fondo"> 
-    </div>
-    <div class="container__frase">
-        <h1>Optiimiza tu prductividad <strong>sumergéte en lo que importa.</strong></h1>
-    </div>
-    <div class="container__botones">
-        <button>Enfocar</button>
-        <button>Corto descanso</button>
-        <button>Largo descanso</button> <br>
-        <button>Iniciar</button>
-    </div>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="es-mx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Fokus</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="/img/Logo.png" alt="Logo de Fokus" class="logo">
-    </header>
-    <main>
-        <div>
-            <h1>Optimiza tu productividad <strong>sumergete en lo que importa.</strong></h1>
-        </div>
-        <div>
-            <button>Enfocar</button>
-            <button>Corto descanso</button>
-            <button>Largo descanso</button> <br>
-            <button>Iniciar</button>   
-        </div>
-    </main>
-    <footer></footer>
+    <div class="contenedor-body">
+        <img src="/img/Background-linhas.png" alt="Fondo de la pagina ondas" class="imagen-fondo">
+        <header>
+            <div class="contenedor-logo">
+            <img src="/img/Logo.png" alt="Logo de Fokus" class="logo">
+            </div>
+        </header>
+        <main>
+            <div class="contenedor-main">
+                <div class="contenedor-parrafo">
+                    <p>Optimiza tu productividad <strong id="bold">sumergete en lo que importa.</strong></p>
+                </div>
+                    <div class="contenedor-timer">
+                        <div class="contenedor-botonessuperior">
+                        <button>Enfocar</button>
+                        <button>Corto descanso</button>
+                        <button>Largo descanso</button>
+                    </div>
+                    <div class="contenedor-botoninferior">
+                        <button>Iniciar</button>   
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
 </body>
 </html>
