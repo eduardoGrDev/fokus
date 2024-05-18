@@ -87,13 +87,14 @@ body::before {
     margin: 0 2%;
 }
 
-.timer__top-buttons {
+.timer__topButtons {
     display: flex;
     gap: 16px;
     justify-content: center;
+    list-style-type: none;
 }
 
-.timer__top-buttons__focus, .timer__top-buttons__short-break, .timer__top-buttons__long-break {
+.timer__topButtons__button {
     border-radius: 8px;
     padding: 8px;
     background: none;
@@ -102,11 +103,11 @@ body::before {
     font-family: var(--fuente-montserrat);
 }
 
-.timer__top-buttons__focus:hover, .timer__top-buttons__short-break:hover, .timer__top-buttons__long-break:hover {
+.timer__topButtons__button:hover {
     background: var(--color-terciario30);   
 }
 
-.timer__top-buttons__focus-active, .timer__top-buttons__short-break-active, .timer__top-buttons__long-break-active {
+.timer__topButtons__button-active {
     border-radius: 8px;
     padding: 8px;
     background: none;
@@ -124,7 +125,7 @@ body::before {
     color: var(--color-secundario);
 }
 
-.timer__bottom-button__start {
+.timer__bottomButton__start {
     background: linear-gradient(180deg, #B872FF 0%, #144480 100%);
     border-radius: 32px;
     padding: 8px;
@@ -137,8 +138,12 @@ body::before {
     border: 1px;
 }
 
-.timer__bottom-button__start:hover {
+.timer__bottomButton__start:hover {
     border: 3px solid var(--color-primario);
+}
+
+.footer {
+    color: #ffffff;
 }
 
 @media (max-width: 1200px) {

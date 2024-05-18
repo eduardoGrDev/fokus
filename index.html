@@ -11,21 +11,25 @@
         <img src="/img/Logo.png" alt="Logo de aplicacion FOKUS" class="header__logo">
     </header>
     <main class="main">
-        <p class="main__text">Optimiza tu productividad, <strong class="main__text__bold">sumérgete en lo que importa.</strong></p>
+        <h2 class="main__text">Optimiza tu productividad, <strong class="main__text__bold">sumérgete en lo que importa.</strong></h2>
         <section class="timer">
-            <div class="timer__top-buttons">
-                <a class="timer__top-buttons__focus-active">Enfocar</a>
-                <a class="timer__top-buttons__short-break">Corto descanso</a>
-                <a class="timer__top-buttons__long-break">Largo descanso</a>
-            </div>
+            <ul class="timer__topButtons">
+               <li><button class="timer__topButtons__button-active" aria-label="Enfocar">Enfocar</button></li>
+               <li><button class="timer__topButtons__button" aria-label="Corto descanso">Corto descanso</button></li>
+               <li><button class="timer__topButtons__button" aria-label="Largo descanso">Largo descanso</button></li>
+            </ul>
             <div class="timer__clock">
-                <time datetime="">25:00</time>
+                <time datetime="PT25M" aria-label="25 minutos">25:00</time>
             </div>
-            <div class="timer__bottom-button">
-                <button class="timer__bottom-button__start">Iniciar</button>
+            <div class="timer__bottomButton">
+                <button class="timer__bottomButton__start" aria-label="Iniciar">Iniciar</button>
             </div>
         </section>
     </main>
-    <footer></footer>  
+    <footer class="footer">
+        <p>&copy; 2024 Fokus. Todos los derechos reservados.</p>
+        <p>Desarrollado por eduardo.dev</p>
+    </footer>
+    <script src="app.js"></script>
 </body>
 </html>
