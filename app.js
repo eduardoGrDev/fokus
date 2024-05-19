@@ -29,6 +29,7 @@ function timerDecreser () {
     } else {
         clearInterval(timer);
         isRunning = false;
+        startButton.innerHTML = 'Reiniciar';
         if (focusButton.attributes[1].nodeValue == 'timer__topButtons__button-active') {
             alert ('Es hora del descanso!!');
         } else if (shortBreakButton.attributes[1].nodeValue == 'timer__topButtons__button-active') {
@@ -51,6 +52,17 @@ function stopTimer () {
         clearInterval(timer);
         isRunning = false;
     } 
+}
+//Funcion para reiniciar el contador una vez que termina
+function restartTimer () {
+    if (focusButton.attributes[1].nodeValue == 'timer__topButtons__button-active') {
+        timeLeft = (25 * 60);
+    } else if (shortBreakButton.attributes[1].nodeValue == 'timer__topButtons__button-active') {
+        timeLeft = (5 * 60);
+    } else if (longBreakButton.attributes[1].nodeValue == 'timer__topButtons__button-active') {
+        timeLeft = (15 * 60);
+    }
+    updateTimerDisplay();
 }
 //Se repaza array de los botones superiores y se asigna accion al dar click 
 for (let i = 0; i < (listButtons.length); i++) {
@@ -80,6 +92,9 @@ startButton.onclick = function () {
     } else if (startButton.innerHTML == 'Pausar'){
         startButton.innerHTML = 'Iniciar';
         stopTimer();
+    } else if (startButton.innerHTML == 'Reiniciar') {
+        startButton.innerHTML = 'Iniciar';
+        restartTimer();
     }
 }
 
