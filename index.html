@@ -14,15 +14,15 @@
         <h2 class="main__text">Optimiza tu productividad, <strong class="main__text__bold">sumérgete en lo que importa.</strong></h2>
         <section class="timer">
             <ul class="timer__topButtons">
-               <li><button class="timer__topButtons__button-active" aria-label="Enfocar">Enfocar</button></li>
-               <li><button class="timer__topButtons__button" aria-label="Corto descanso">Corto descanso</button></li>
-               <li><button class="timer__topButtons__button" aria-label="Largo descanso">Largo descanso</button></li>
+               <li><button id="focusButton" class="timer__topButtons__button-active" aria-label="Enfocar">Enfocar</button></li>
+               <li><button id="shortBreakButton" class="timer__topButtons__button" aria-label="Corto descanso">Corto descanso</button></li>
+               <li><button id="longBreakButton" class="timer__topButtons__button" aria-label="Largo descanso">Largo descanso</button></li>
             </ul>
             <div class="timer__clock">
-                <time datetime="PT25M" aria-label="25 minutos">25:00</time>
+                <time id="timer" datetime="PT25M" aria-label="25 minutos">25:00</time>
             </div>
             <div class="timer__bottomButton">
-                <button class="timer__bottomButton__start" aria-label="Iniciar">Iniciar</button>
+                <button id="startButton" class="timer__bottomButton__start" aria-label="Iniciar">Iniciar</button>
             </div>
         </section>
     </main>
