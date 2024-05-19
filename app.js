@@ -99,24 +99,3 @@ startButton.onclick = function () {
 }
 
 updateTimerDisplay();
-
-/*shortBreakButton.onclick = function () {
-    shortBreakButton.setAttribute('Class', 'timer__topButtons__button-active');
-    longBreakButton.setAttribute('Class', 'timer__topButtons__button');
-    focusButton.setAttribute('Class', 'timer__topButtons__button');
-    timer.innerHTML = '5:00';
-}
-
-focusButton.onclick = function () {
-    shortBreakButton.setAttribute('Class', 'timer__topButtons__button');
-    longBreakButton.setAttribute('Class', 'timer__topButtons__button');
-    focusButton.setAttribute('Class', 'timer__topButtons__button-active');
-    timer.innerHTML = '25:00';
-}
-
-longBreakButton.onclick = function () {
-    shortBreakButton.setAttribute('Class', 'timer__topButtons__button');
-    longBreakButton.setAttribute('Class', 'timer__topButtons__button-active');
-    focusButton.setAttribute('Class', 'timer__topButtons__button');
-    timer.innerHTML = '15:00';
-}*/
