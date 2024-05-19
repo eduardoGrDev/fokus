@@ -85,6 +85,8 @@ body::before {
     gap: 40px;
     padding: 25px;
     margin: 0 2%;
+    width: 500px;
+    height: 350px;
 }
 
 .timer__topButtons {
@@ -123,6 +125,8 @@ body::before {
     font-size: 7rem;
     text-align: center;
     color: var(--color-secundario);
+    width: 428px;
+    height: 139px;
 }
 
 .timer__bottomButton__start {
@@ -162,6 +166,8 @@ body::before {
     .timer {
         height: 350px;
         width: 500px;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -195,6 +201,8 @@ body::before {
 
     .timer__clock {
         font-size: 3.35rem;
+        width: auto;
+        height: auto;
     }
 }
 
@@ -228,5 +236,7 @@ body::before {
 
     .timer__clock {
         font-size: 3.35rem;
+        width: auto;
+        height: auto;
     }
 }
